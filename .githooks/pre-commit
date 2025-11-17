@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Pre-commit hook to enforce STYLE.md headers on staged files.
+# To enable hooks for this repo run: git config core.hooksPath .githooks
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/scripts"
+"${SCRIPT_DIR}/check_style.sh" || exit $?

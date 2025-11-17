@@ -1,0 +1,18 @@
+# Top-level gitignore for Workspace
+
+# macOS
+.DS_Store
+
+# build artifacts
+obj/
+**/obj/
+*.o
+
+# archives and local executables
+*.zip
+horse
+test_game
+a.out
+
+# editor configs
+.vscode/
